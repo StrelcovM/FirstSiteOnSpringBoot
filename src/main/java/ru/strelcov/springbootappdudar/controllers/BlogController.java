@@ -62,7 +62,7 @@ public class BlogController {
         ArrayList<Post> res = new ArrayList<>();
         post.ifPresent(res::add);
         Post post1 = res.get(0);
-        model.addAttribute("title", "" + "Редактирование поста № " + id);
+        model.addAttribute("title","Редактирование поста № " + id);
         model.addAttribute("post", post1);
         return "blog-edit";
     }
